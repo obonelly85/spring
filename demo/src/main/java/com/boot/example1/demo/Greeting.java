@@ -5,12 +5,13 @@ public class Greeting {
     private final long id;
     private final String content;
     private String language;
-    
+    private String age;    
 
-    public Greeting(long id, String content, String language) {
+    public Greeting(long id, String content, String language, String age) {
         this.id = id;
         this.content = content;
         this.language = language;
+        this.age = age;
     }
 
     public long getId() {
@@ -28,6 +29,12 @@ public class Greeting {
 	public void setLanguage(String language) {
 		this.language = language;
 	}
-    
-    
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
 }
